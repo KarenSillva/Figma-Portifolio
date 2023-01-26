@@ -1,0 +1,188 @@
+@media (max-width: 600px) {
+    #logo{
+        width: 50%;
+    }
+    aside {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 75px;
+    }
+    main {
+        display: inline-block;
+        
+    }
+
+    h2{
+      font-size: 18px;
+      display: inline-block;
+      flex-direction: row;
+      text-align: center;
+      align-items: center;
+      line-height: 1px;
+      gap: 3rem;
+    }
+    
+    span {
+      font-size: 45px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      flex-direction: column;
+      display: flex;
+      line-height: 20px;
+      text-align: center;
+      margin-top: 20px;
+
+    }
+    img {
+      display: none;
+    }
+
+    .cv {
+      width: 220px;
+    }
+
+    .phone {
+      width:220px
+    }
+        
+  #menu {
+    display: block;
+    position: absolute;
+    width: 50%;
+    top: 70px;
+    right: 0px;
+    background: #e7e7e7;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  .sobre-mim{
+    margin-top: auto;
+  }
+
+  .sobre-mim h1 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+  }
+  .sobre-mim p {
+    margin-top: auto;
+    justify-content: center;
+    padding: 60px;
+  }
+  #paragrafo {
+    display: none;
+  }
+  .contato {
+    display: flex;
+    flex-wrap: wrap;
+  }
+   .contato ul {
+    display: flex;
+  }
+  
+  .projetos h1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .card {
+    width: 70%
+  }
+  .cards-item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card img {
+    width: 100%;
+    padding: 1rem;
+  }
+  .card p {
+    text-align: left;
+  }
+  #service{
+    display: flex;
+    flex-direction: column;
+  }
+  .w3-container{
+    width: 90vh;
+  }
+  .w3-card{
+    display: flex;
+    flex-direction: column;
+  }
+  .w3{
+     width: 90vh;
+  }
+  .criacao {
+    display: inline;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .skills-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  .rodape {
+    display: flex;
+    justify-content: center;
+  }
+  .roda {
+    display: none;
+  }
+}
